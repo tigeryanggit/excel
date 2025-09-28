@@ -359,7 +359,9 @@ p{
 
 .container-formula-menu {
     border: var(--border-test);
+    background-color:var(--primary-1);
     width: 13rem;
+    height: calc(100vh - var(--margin-nav));
     overflow-y: scroll;
     scrollbar-width: none;
 
@@ -372,6 +374,7 @@ p{
 .container-formula-detail {
     border: var(--border-test);
     width: 100%;
+    height: calc(100vh - var(--margin-nav));
     overflow-y: scroll;
     scrollbar-width: thin;
     background-image: url(./assets/background.png);
@@ -381,47 +384,6 @@ p{
     background-size:cover;
 
 }
-
-/* .card {
-    border: var(--border-test);
-    border: 1px solid green;
-    width: 50%;
-    box-shadow: var(--shadow);
-
-
-    .col-md-4 {
-        border: var(--border-test2);
-        
-    }
-
-    .col-md {
-        border: var(--border-test2);
-    }
-} */
-
-/* .container-cards {
-    border: var(--border-test);
-    display: flex;
-    margin-top: var(--margin-nav);
-    padding: var(--padding) 0 var(--padding) 0;
-    scrollbar-width: thin;
-    width: 80%;
-    height: calc (100% - var(--margin-nav));
-    height: 100vh;
-    background-color: var(--primary-3);
-    box-shadow: var(--shadow);
-    position: fixed;
-
-    a {
-        cursor: pointer;
-    }
-
-    li {
-        padding: var(--padding);
-    }
-
-
-} */
 
 
 .card-container {
@@ -470,10 +432,11 @@ p{
 }
 
 
-.container-main {
+.container-index {
 
     border: var(--border-test);
     font-family: "Stick", sans-serif;
+    background-color:var(--primary-1);
     display: flex;
     flex-direction: column;
     margin-top: var(--margin-nav);
@@ -484,11 +447,11 @@ p{
     width:100%;
     overflow-y: scroll;
     scrollbar-width: thin;
-    background-image: url(./assets/background.png);
-    background-position: fixed;
-    background-repeat: no-repeat;
+    /* background-image: url(./assets/background.png); */
+    /* background-position: fixed; */
+    /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
-    background-size:cover;
+    /* background-size:cover; */
     height: calc(100vh - var(--margin-nav));
 
     h1 {
@@ -496,39 +459,47 @@ p{
         width:100%;
     }
 
-     .main-title-text {
+     .index-title-text {
         display: inline-block;
         font-weight: 600;
         font-size: 3rem;
         rotate: -10deg;
     }
 
-    .main-title-text::first-letter {
+    .index-title-text::first-letter {
         color: var(--font-color-9-2);
         font-size: 5rem;
     }
 
 
-    .container-main-body {
+    .container-index-body {
         margin-top: var(--margin-nav);
         display: flex;
         flex-direction: column;
         width: 100%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        max-width: var(--max-width);
+        text-align: left;
+        justify-content: left;
+        align-items:start;
+
+        p {
+            text-indent: 2em;
+        }
     }
 
-    .excel-sample {
-        width: 80%;
-        max-width: 700px;
-        display: flex;
+    .container-index-img {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+
+
 
     }
 
     img {
         width: 100%;
         margin-top: var(--margin-nav);
+
         
     }
 

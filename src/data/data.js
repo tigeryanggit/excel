@@ -1,7 +1,38 @@
+import {vlookup} from "../assets/formula/excel_vlookup.png";
+import {left} from "../assets/formula/excel_left.png";
+import {right} from "../assets/formula/excel_right.png";
+import {mid} from "../assets/formula/excel_mid.png";
+import {len} from "../assets/formula/excel_len.png";
+import {replace} from "../assets/formula/excel_replace.png";
+import {find} from "../assets/formula/excel_find.png";
+import {upper} from "../assets/formula/excel_upper.png";
+import {lower} from "../assets/formula/excel_lower.png";
+import {proper} from "../assets/formula/excel_proper.png";
+import {text} from "../assets/formula/excel_text.png";
+import {concat} from "../assets/formula/excel_concat.png";
+import {rept} from "../assets/formula/excel_rept.png";
+import {trim} from "../assets/formula/excel_trim.png";
+import {date} from "../assets/formula/excel_date.png";
+import {year} from "../assets/formula/excel_year.png";
+import {month} from "../assets/formula/excel_month.png";
+import {day} from "../assets/formula/excel_day.png";
+import {today} from "../assets/formula/excel_today.png";
+import {now} from "../assets/formula/excel_now.png";
+import {sum} from "../assets/formula/excel_sum.png";
+import {average} from "../assets/formula/excel_average.png";
+import {abs} from "../assets/formula/excel_abs.png";
+import {max} from "../assets/formula/excel_max.png";
+import {min} from "../assets/formula/excel_min.png";
+import {count} from "../assets/formula/excel_count.png";
+import {if} from "../assets/formula/excel_if.png";
+import {and} from "../assets/formula/excel_and.png";
+import {or} from "../assets/formula/excel_or.png";
+import {hyperlink} from "../assets/formula/excel_hyperlink.png";
+
 export const excelFormula =[
     {
         id:1,
-        image: 'excel_vlookup.png',
+        image: {vlookup},
         name: 'VLOOKUP',
         link: '#VLOOKUP',
         para: '[查閱值], [查閱範圍], [欄位編號], [TRUE / FALSE]',
@@ -12,7 +43,7 @@ export const excelFormula =[
     },
     {
         id:2,
-        image: 'excel_left.png',
+        image: {left},
         name: 'LEFT',        
         link: '#LEFT',
         para: '[文字], [字元數]',
@@ -23,7 +54,7 @@ export const excelFormula =[
     },
     {
         id:3,
-        image: 'excel_right.png',
+        image: {right},
         name: 'RIGHT',
         link: '#RIGHT',
         para: '[文字], [字元數]',
@@ -35,7 +66,7 @@ export const excelFormula =[
     },
     {
         id:4,
-        image: 'excel_mid.png',
+        image: {mid},
         name: 'MID',
         link: '#MID',
         para: '[文字], [開始位置], [字元數]',
@@ -46,7 +77,7 @@ export const excelFormula =[
     },
     {
         id:5,
-        image: 'excel_len.png',
+        image: {len},
         name: 'LEN',
         link: '#LEN',
         para: '[文字]',
@@ -58,7 +89,7 @@ export const excelFormula =[
     },
     {
         id:6,
-        image: 'excel_replace.png',
+        image: {replace},
         name: 'REPLACE',
         link: '#REPLACE',
         para: '[文字]',
@@ -70,7 +101,7 @@ export const excelFormula =[
     },
     {
         id:7,
-        image: 'excel_find.png',
+        image: {find},
         name: 'FIND',
         link: '#FIND',
         para: '[要找的文字], [被搜尋的文字]',
@@ -82,7 +113,7 @@ export const excelFormula =[
     },
     {
         id:8,
-        image: 'excel_upper.png',
+        image: {upper},
         name: 'UPPER',
         link: '#UPPER',
         para: '[文字]',
@@ -94,7 +125,7 @@ export const excelFormula =[
     },
     {
         id:9,
-        image: 'excel_lower.png',
+        image: {lower},
         name: 'LOWER',
         link: '#LOWER',
         para: '[文字]',
@@ -104,7 +135,7 @@ export const excelFormula =[
     },
     {
         id:10,
-        image: 'excel_proper.png',
+        image: {proper},
         name: 'PROPER',
         link: '#PROPER',
         para: '[文字]',
@@ -114,7 +145,7 @@ export const excelFormula =[
     },
     {
         id:8,
-        image: 'excel_text.png',
+        image: {text},
         name: 'TEXT',
         link: '#TEXT',
         para: '[數值]',
@@ -126,7 +157,7 @@ export const excelFormula =[
     },
     {
         id:9,
-        image: 'excel_concat.png',
+        image: {concat},
         name: 'CONCAT',
         link: '#CONCAT',
         para: '[文字]',
@@ -138,7 +169,7 @@ export const excelFormula =[
     },
     {
         id:10,
-        image: 'excel_rept.png',
+        image: {rept},
         name: 'REPT',
         link: '#REPT',
         para: '[文字]',
@@ -150,7 +181,7 @@ export const excelFormula =[
     },
     {
         id:11,
-        image: 'excel_trim.png',
+        image: {trim},
         name: 'TRIM',
         link: '#TRIM',
         para: '[文字]',
@@ -162,7 +193,7 @@ export const excelFormula =[
     },
     {
         id:12,
-        image: 'excel_date.png',
+        image: {date},
         name: 'DATE',
         link: '#DATE',
         para: '[年], [月], [日]',
@@ -174,7 +205,7 @@ export const excelFormula =[
     },
     {
         id:13,
-        image: 'excel_year.png',
+        image: {year},
         name: 'YEAR',
         link: '#YEAR',
         para: '[日期]',
@@ -186,7 +217,7 @@ export const excelFormula =[
     },
     {
         id:14,
-        image: 'excel_month.png',
+        image: {month},
         name: 'MONTH',
         link: '#MONTH',
         para: '[日期]',
@@ -198,7 +229,7 @@ export const excelFormula =[
     },
     {
         id:15,
-        image: 'excel_day.png',
+        image: {day},
         name: 'DAY',
         link: '#DAY',
         para: '[日期]',
@@ -210,7 +241,7 @@ export const excelFormula =[
     },
     {
         id:16,
-        image: 'excel_day.png',
+        image: {today},
         name: 'TODAY',
         link: '#TODAY',
         para: 'N/A',
@@ -223,7 +254,7 @@ export const excelFormula =[
 
     {
         id:17,
-        image: 'excel_now.png',
+        image: {now},
         name: 'NOW',
         link: '#NOW',
         para: 'N/A',
@@ -235,7 +266,7 @@ export const excelFormula =[
     },
     {
         id:24,
-        image: 'excel_sum.png',
+        image: {sum},
         name: 'SUM',
         link: '#SUM',
         para: '[數值1], [數值2], ...',
@@ -246,7 +277,7 @@ export const excelFormula =[
     },
     {
         id:25,
-        image: 'excel_average.png',
+        image: {average},
         name: 'AVERAGE',
         link: '#AVERAGE',
         para: '[數值1], [數值2], ...',
@@ -257,7 +288,7 @@ export const excelFormula =[
     },
     {
         id:26,
-        image: 'excel_abs.png',
+        image: {abs},
         name: 'ABS',
         link: '#ABS',
         para: '[數值]',
@@ -269,7 +300,7 @@ export const excelFormula =[
     },
     {
         id:27,
-        image: 'excel_max.png',
+        image: {max},
         name: 'MAX',
         link: '#MAX',
         para: '[數值1], [數值2], ...',
@@ -280,7 +311,7 @@ export const excelFormula =[
     },
     {
         id:28,
-        image: 'excel_min.png',
+        image: {min},
         name: 'MIN',
         link: '#MIN',
         para: '[數值1], [數值2], ...',
@@ -292,7 +323,7 @@ export const excelFormula =[
     },
     {
         id:29,
-        image: 'excel_count.png',
+        image: {count},
         name: 'COUNT',
         link: '#COUNT',
         para: '[數值1], [數值2], ...',
@@ -304,7 +335,7 @@ export const excelFormula =[
     },
     {
         id:30,
-        image: 'excel_if.png',
+        image: {if},
         name: 'IF',
         link: '#IF',
         para: '[邏輯算式], [值如果為真], [值如果為假]',
@@ -316,7 +347,7 @@ export const excelFormula =[
     },
     {
         id:31,
-        image: 'excel_and.png',
+        image: {and},
         name: 'AND',
         link: '#AND',
         para: '[邏輯算式]',
@@ -328,7 +359,7 @@ export const excelFormula =[
     },
     {
         id:31,
-        image: 'excel_or.png',
+        image: {or},
         name: 'OR',
         link: '#OR',
         para: '[邏輯算式]',
@@ -340,7 +371,7 @@ export const excelFormula =[
     },
     {
         id:33,
-        image: 'excel_hyperlink.png',
+        image: {hyperlink},
         name: 'HYPERLINK',
         link: '#HYPERLINK',
         para: '[連結位置], [顯示名稱]',

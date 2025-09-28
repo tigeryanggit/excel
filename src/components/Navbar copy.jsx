@@ -18,21 +18,31 @@ const Navbar = () => {
 
   return (
 
-    // <BrowserRouter> 
+    <BrowserRouter> 
 
             <nav className="container-nav">
                 <div className="nav-logo">
-
-
+                    {/* <img src={logo} alt=""/> */}
                 </div>
 
                 <div className="nav-menu">
-
                     <ul>
+                        {/* <a href=""><li>首頁</li></a>
+                        <a href=""><li>函數</li></a>
+                        <a href=""><li>小知識</li></a>
+                        <a href=""><li>其他功能</li></a> */}
+
                         <li><Link to="/">首頁</Link></li>
                         <li><Link to="/formulas">函數</Link></li>
                         <li><Link to="/knowledge">小知識</Link></li>
-                        <li><Link to="/others">其他功能</Link></li>                        
+                        <li><Link to="/others">其他功能</Link></li>
+                        {/* <li><DropdownMeat /></li>
+                        <li><DropdownVegetables/></li>
+                        <li><DropdownRecipe/></li>
+                        <li><Link to="/about">關於</Link></li> */}
+
+                        
+                        
                     </ul>
                 </div>
 
@@ -60,16 +70,37 @@ const Navbar = () => {
             </nav>
 
 
-        // <Routes>
+        <Routes>
+            <Route index element={<Main />} />
+            <Route path="/" element={<Main />} />
+            <Route path="/formulas" element={<Formulas />} />
+            <Route path="/knowledge" element={<Wait />} />
+            <Route path="/others" element={<Wait />} />
+            {/* <Route path="/" element={<Index />} />
+            <Route path="/purchase" element={<Purchase />} />
+            <Route path="/meat" element={<Meat />} />
+            <Route path="/redmeat" element={<Redmeat />} />
+            <Route path="/whitemeat" element={<Whitemeat />} />
+            <Route path="/seafood" element={<Seafood />} />
+            <Route path="/vegetables" element={<Vegetables />} />
+            <Route path="/fruits" element={<Fruits />} />
+            <Route path="/grains" element={<Grains />} />
+            <Route path="/vegetable" element={<Vegetable />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/recipe" element={<Recipes />} />
+            <Route path="/map" element={<Map />} />
+            <Route path="/hotmeal" element={<HotMeal />} />
+            <Route path="/coldmeal" element={<ColdMeal />} /> */}
+            {/* <Route path="/coldmeal" element={<ColdMeal />} /> */}
 
-        //     <Route path="/" element={<Main />} />
-        //     <Route path="/formulas" element={<Formulas />} />
-        //     <Route path="/knowledge" element={<Wait />} />
-        //     <Route path="/others" element={<Wait />} />
+            {/* <Route path="/contact" element={<Contact />} /> */}
+            {/* Add footer */}
+            {/* <Footer /> */}
+        </Routes>
 
-        // </Routes>
+        {/* <Main /> */}
 
-    // </BrowserRouter> 
+    </BrowserRouter> 
     
   )
 }
