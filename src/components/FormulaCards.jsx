@@ -17,7 +17,7 @@ function FormulaCards() {
 
             <Card 
               key={y.id}
-              image={getImageURL(y.image,'../assets/formula/')}
+              image={y.image}
               name={y.name} 
               link={y.name}
               para={y.para}
