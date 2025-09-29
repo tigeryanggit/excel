@@ -6,7 +6,7 @@ import Formulas from './Formulas';
 import FormulaCards from './FormulaCards';
 import Knowledge from './Knowledge';
 import Wait from './Wait';
-import Main from './Main';
+
 
 
 const Navbar = () => {
@@ -32,7 +32,8 @@ const Navbar = () => {
                         <li><Link to="/">首頁</Link></li>
                         <li><Link to="/formulas">函數</Link></li>
                         <li><Link to="/knowledge">小知識</Link></li>
-                        <li><Link to="/others">其他功能</Link></li>                        
+                        <li><Link to="/others">其他功能</Link></li>
+                        <li><Link to="/about">關於</Link></li>                        
                     </ul>
                 </div>
 
@@ -47,13 +48,11 @@ const Navbar = () => {
                     isToggle ? "mobile-list active":"mobile-list"
                 } >
                     <ul>
-                                    {/* <li><Link to="/" onClick={handleToggle}>首頁</Link></li>
-                                    <li><Link to="/map" onClick={handleToggle}>街巿地圖</Link></li>
-                                    <li><Link to="/purchase" onClick={handleToggle}>時令蔬菜</Link></li>
-                                    <li><Link to="/meat" onClick={handleToggle}>肉類介紹</Link></li>
-                                    <li><Link to="/vegetables" onClick={handleToggle}>素類介紹</Link></li>
-                                    <li><Link to="/recipe" onClick={handleToggle}>食譜簡介</Link></li>
-                                    <li><Link to="/about" onClick={handleToggle}>關於</Link></li> */}
+                        <li><Link to="/">首頁</Link></li>
+                        <li><Link to="/formulas">函數</Link></li>
+                        <li><Link to="/knowledge">小知識</Link></li>
+                        <li><Link to="/others">其他功能</Link></li>  
+                        <li><Link to="/about">關於</Link></li>     
                     </ul>
                 </div>
 

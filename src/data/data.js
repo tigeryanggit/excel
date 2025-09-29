@@ -93,9 +93,9 @@ export const excelFormula =[
         image: replace,
         name: 'REPLACE',
         link: '#REPLACE',
-        para: '[文字]',
+        para: '[舊文字], [開始位置], [字元數], [新文字]',
         content: 'REPLACE的基本用途是將文字字串中指定位置開始的特定數量字元替換為新的文字。關鍵在於需要準確指定要替換的起始位置和字元數量，這個函數特別適合處理具有固定格式的文字資料，當需要修改特定位置的內容時非常有用。',
-        sample: '假設[舊文字]為C3儲存格,內容為"Good Morning",開始位置為6,字元數為7,即由第6個字元開始計起的7個字元(即為"Morning"),此字元最後將會被[新文字]("Evening")所取代,所以最終得出答案為"Good Evening"。',
+        sample: '假設[舊文字]為C3儲存格,內容為"Good Morning",[開始位置]為6,字元數為7,即由第6個字元開始計起的7個字元(即為"Morning"),此字元最後將會被[新文字]("Evening")所取代,所以最終得出答案為"Good Evening"。',
         application: '批量修改儲存格中的特定區段或隱藏敏感資訊的部分內容等等。'
 
 

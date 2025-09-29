@@ -6,7 +6,7 @@ import Formulas from './Formulas';
 import FormulaCards from './FormulaCards';
 import Knowledge from './Knowledge';
 import Wait from './Wait';
-import Main from './Main';
+
 
 
 const Navbar = () => {

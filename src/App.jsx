@@ -6,9 +6,9 @@ import Index from './components/Index'
 import Button from './components/Button'
 import Navbar from './components/Navbar'
 import Formulas from './components/Formulas'
-import Main from './components/Main'
 import Wait from './components/Wait'
-
+import About from './components/About'
+import Knowledge from './components/Knowledge'
 
 function App() {
 
@@ -24,8 +24,9 @@ function App() {
                   {/* <Route index element={<Index />} /> */}
                   <Route path="/" element={<Index />} />
                   <Route path="/formulas" element={<Formulas />} />
-                  <Route path="/knowledge" element={<Wait />} />
+                  <Route path="/knowledge" element={<Knowledge />} />
                   <Route path="/others" element={<Wait />} />
+                  <Route path="/about" element={<About />} />
                   <Route path='*' element={<Navigate to='/' />} />   {/* Redirect unknown routes to home */}
 
               </Routes>

@@ -50,7 +50,7 @@ h2 {
     --primary-9:#eaac8b;
     --background: #f1f1f1 ;
     --background-1: gray;
-    --border-test: 1px solid red;
+    --border-test: 0px solid red;
     --border-test2: 1px solid blue;
     --font-color-12: #5c5c5c;
     --font-color-3: #080132;
@@ -133,6 +133,7 @@ p{
     background-color:var(--primary-1);
     /* box-shadow: var(--shadow); */
     height: var(--margin-nav);
+    box-shadow: var(--shadow);
     position: fixed;
     top:0;
     z-index: 5;
@@ -509,3 +510,24 @@ p{
 
 }
 
+.container-knowledge {
+    border: var(--border-test);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--margin-nav));
+    overflow-y: scroll;
+    scrollbar-width: thin;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    ul {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding:1rem;
+
+    }
+
+}
