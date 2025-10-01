@@ -36,7 +36,11 @@ const Navbar = () => {
                         <li><Link to="/about">關於</Link></li>                        
                     </ul>
                 </div>
+                
+                <div className="nav-logo">
 
+
+                </div>
 
                 <div className="nav-burger">
                     <div className="mobile-menu-toggle" onClick={handleToggle}> 
@@ -48,11 +52,11 @@ const Navbar = () => {
                     isToggle ? "mobile-list active":"mobile-list"
                 } >
                     <ul>
-                        <li><Link to="/">首頁</Link></li>
-                        <li><Link to="/formulas">函數</Link></li>
-                        <li><Link to="/knowledge">小知識</Link></li>
-                        <li><Link to="/others">其他功能</Link></li>  
-                        <li><Link to="/about">關於</Link></li>     
+                        <li><Link to="/" onClick={handleToggle}>首頁</Link></li>
+                        <li><Link to="/formulas" onClick={handleToggle}>函數</Link></li>
+                        <li><Link to="/knowledge" onClick={handleToggle}>小知識</Link></li>
+                        <li><Link to="/others" onClick={handleToggle}>其他功能</Link></li>  
+                        <li><Link to="/about" onClick={handleToggle}>關於</Link></li>  
                     </ul>
                 </div>
 

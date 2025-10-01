@@ -50,6 +50,7 @@ h2 {
     --primary-9:#eaac8b;
     --background: #f1f1f1 ;
     --background-1: gray;
+    --background-2: #82ba9e;
     --border-test: 0px solid red;
     --border-test2: 1px solid blue;
     --font-color-12: #5c5c5c;
@@ -159,7 +160,7 @@ p{
 
 }
 
-#dropdown-basic {
+/* #dropdown-basic {
     background-color:var(--primary-1);
     color: var(--primary-6);
     border: 0;
@@ -169,7 +170,7 @@ p{
 
 #dropdown-basic:hover {
     color: lightcoral;    
-}
+} */
 
 
 .nav-logo {
@@ -196,24 +197,37 @@ p{
         justify-content: space-evenly;
         list-style: none;
         margin: 0;
-        padding: 0;
+        padding-top: calc(var(--margin-nav)/4);
+        
 
 
         li {
             padding-top: 30px;
             margin: 0 auto;
+            width: 5rem;
             text-align: center;
+            padding: 10px;
+            border-radius: 50px;
 
         }
+
+        li:hover {
+            background-color:var(--primary-4);
+            opacity: 1;
+            transform: scale(1.4); 
+            transition: 0.8s;
+        }
+
     }
 
     a {
         text-decoration: none;
-        color: var(--primary-6);
+        color: var(--primary-black);
     }
 
     a:hover {
-        color: lightcoral;        
+        color: var(--primary-black);
+        /* font-size: 1.1rem; */
     }
     
 }
@@ -279,7 +293,7 @@ p{
     font-family: "Stick", sans-serif;
     width:10rem;
     position: absolute;
-    background-color: var(--primary-5);
+    background-color: var(--primary-2);
     top:0;
     right:0;
     transition: 1s;
@@ -306,7 +320,7 @@ p{
 .mobile-list.active {
     /* transform:translateX(300%); */
     display: block;
-    height: 22rem;
+    height: 16rem;
     opacity:1;    
     transition: 0.8s;
     z-index: 5;
@@ -329,7 +343,6 @@ p{
         display: block;
     }
 
-
 }
 
 
@@ -349,11 +362,23 @@ p{
 
     a {
         cursor: pointer;
+        text-decoration: none;
     }
 
     li {
         padding: var(--padding);
+        text-decoration: none;
+        color: var(--primary-black);
+        opacity: 0.6;
     }
+
+    li:hover {
+        
+        opacity: 1;
+        scale: 1.1;
+    }
+
+
 
 
 }
@@ -378,11 +403,11 @@ p{
     height: calc(100vh - var(--margin-nav));
     overflow-y: scroll;
     scrollbar-width: thin;
-    background-image: url(./assets/background.png);
+    background-color: var(--background-2);
     /* background-position: fixed; */
     /* background-repeat: no-repeat; */
-    background-attachment: fixed;
-    background-size:cover;
+    /* background-attachment: fixed;
+    background-size:cover; */
 
 }
 

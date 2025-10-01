@@ -6,7 +6,7 @@ function Index() {
     <div className='container-index'>
 
       <div className="index-title">
-        <h1><span className='index-title-text'>Tiger</span> Excel 必殺技教室!!!</h1>
+        <h1><span className='index-title-text'>Tiger</span> Excel 必殺技教學!!!</h1>
       </div>
 
       <div className="container-index-body">

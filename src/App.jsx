@@ -10,8 +10,9 @@ import Wait from './components/Wait'
 import About from './components/About'
 import Knowledge from './components/Knowledge'
 
-function App() {
 
+function App() {
+  
 
   return (
     <>
