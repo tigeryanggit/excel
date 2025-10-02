@@ -28,6 +28,11 @@ import iff from "../assets/formula/excel_if.png";
 import and from "../assets/formula/excel_and.png";
 import or from "../assets/formula/excel_or.png";
 import hyperlink from "../assets/formula/excel_hyperlink.png";
+import copy_cell from '../assets/videos/excel_copy_cell.mp4';
+import dollar_sign from '../assets/videos/excel_dollar_sign.mp4';
+import equal_mark from '../assets/videos/excel_equal_mark.mp4';
+import f2 from '../assets/videos/excel_f2.mp4';
+import pure_text from '../assets/videos/excel_pure_text.mp4';
 
 
 export const excelFormula =[
@@ -392,37 +397,37 @@ export const hotKey =[
         id:1,
         name: 'Ctrl + A',
         link: '#hotkey1',
-        content: '選擇全部儲存格。',        
+        content: '選擇全部儲存格',        
     },
     {
         id:2,
         name: 'Ctrl + C',
         link: '#hotkey2',
-        content: '複製選取範圍。',        
+        content: '複製選取範圍',        
     },
     {
         id:3,
         name: 'Ctrl + X',
         link: '#hotkey3',
-        content: '剪下選取範圍。',        
+        content: '剪下選取範圍',        
     },
     {
         id:4,
         name: 'Ctrl + V',
         link: '#hotkey4',
-        content: '貼上選取項目。',        
+        content: '貼上選取項目',        
     },
     {
         id:5,
         name: 'Ctrl + Z',
         link: '#hotkey5',
-        content: '復原最近的動作。',        
+        content: '復原最近的動作',        
     },
     {
         id:6,
         name: 'Ctrl + S',
         link: '#hotkey6',
-        content: '儲存活頁簿。',        
+        content: '儲存活頁簿',        
     },
     {
         id:7,
@@ -437,39 +442,45 @@ export const hotKey =[
 export const excelKnowledge =[
     {
         id:1,
-        name: '號("=")的應用',
+        name: '等號("=")的應用',
         link: '#knowledge1',
         content: '等號於Excel中定義為於儲存格應用excel內建的函式或加減乘除等數學算式。當你於儲存格的開端加入等號,excel 便會開始運算,儲存格便會顯示出計算的結果而非用戶所輸入的資料。',        
+        video: equal_mark,
     },
     {
         id:2,
         name: '輸入純文字',
         link: '#knowledge2',
         content: '有時候,我們想於儲存格輸入一些文字而非數字, 如當我們想輸入"06"於儲存格中, excel便會自動將文字格式轉為數字,得出結果變為"6"。如我們想顯示"06", 我們可以於前端加入"`" 即於儲存格輸入"`06",得出結果便會變為"06"。',        
+        video: pure_text,
     },
     {
         id:3,
         name: 'F2 鍵檢視公式',
         link: '#knowledge3',
         content: '假設你在某儲存格輸入了函式, 而函式的參數是來自某些儲存格,此時,你只要於該儲存格中按"F2"鍵, excel便會自動highlight相關的儲存格。',        
+        video: f2,
     },
     {
         id:4,
-        name: '快速填入製儲存格內容',
+        name: '快速填入儲存格內容',
         link: '#Knowledge4',
         content: '只要我們將滑鼠停在要複製內容的儲存格,你便會見到該儲存格的右下角會出現一點,此時,將滑鼠移到該點,一個"十"字符號便會出現,我們只要按滑鼠左鍵並向下拉,該儲存格的內容便會複製到下拉的儲存格。如兩個連續的儲存格已填入如[2], [3]的數字,然後使用上述"快速複製儲存格內容的方法,我們便可將餘下的儲存格填入順予的數字。(此方法亦可向右拉以獲得相同效果)',        
+        video: copy_cell,
     },
     {
         id:5,
         name: '選取全 列 / 行 / 表',
         link: '#knowledge5',
         content: '我們除了可以用滑鼠點選儲存格來選取我們想要的儲存格外,我們還可以點選試算表外圍的 row / column header, 或左上角的三角圖形來選取全表格。',        
+        video: dollar_sign,
     },
     {
         id:6,
         name: '鎖定儲存格("$"符號)',
         link: '#knowledge6',
         content: '當我們想於公式中應用儲存格來運算,而該儲存格是定死在某一個位置,我們便可以於該儲存格加入"$"用以所定該 列 / 行 / 格的位置。',        
+        video: dollar_sign,
     },
 
 ]

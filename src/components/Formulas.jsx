@@ -9,6 +9,7 @@ function Formulas() {
     
     <div className="container-formula">
       <div className="container-formula-menu">
+        
         <ul>
             {/* <li>1111</li> */}
             {/* <Formula /> */}
@@ -43,6 +44,7 @@ function Formulas() {
 
       {/* <FormulaCards /> */}
       <div className="container-formula-detail">
+              <h2>函數</h2>
         <FormulaCards />
         {/* {
 
