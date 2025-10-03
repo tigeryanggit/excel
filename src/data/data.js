@@ -33,7 +33,7 @@ import dollar_sign from '../assets/videos/excel_dollar_sign.mp4';
 import equal_mark from '../assets/videos/excel_equal_mark.mp4';
 import f2 from '../assets/videos/excel_f2.mp4';
 import pure_text from '../assets/videos/excel_pure_text.mp4';
-
+import select from '../assets/videos/excel_select.mp4';
 
 export const excelFormula =[
     {
@@ -473,7 +473,7 @@ export const excelKnowledge =[
         name: '選取全 列 / 行 / 表',
         link: '#knowledge5',
         content: '我們除了可以用滑鼠點選儲存格來選取我們想要的儲存格外,我們還可以點選試算表外圍的 row / column header, 或左上角的三角圖形來選取全表格。',        
-        video: dollar_sign,
+        video: select,
     },
     {
         id:6,

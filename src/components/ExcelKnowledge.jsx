@@ -10,8 +10,12 @@ function ExcelKnowledge({name, link, content, video}) {
         <p>{content}</p>
 
         <div className="iframe" >
-           <iframe src={video} title={name} frameborder="0" allowfullscreen ></iframe>
+           <iframe src={video} title={name} do-not-allow="autoplay" frameborder="0" allowfullscreen ></iframe>
         </div>
+
+        {/* <video width="320" height="240" controls autoplay>
+          <source src={video} type="video/mp4"/>
+        </video> */}
 
     </div>
   )
