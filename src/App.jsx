@@ -26,7 +26,7 @@ function App() {
                   <Route path="/" element={<Index />} />
                   <Route path="/formulas" element={<Formulas />} />
                   <Route path="/knowledge" element={<Knowledge />} />
-                  <Route path="/others" element={<Wait />} />
+                  {/* <Route path="/others" element={<Wait />} /> */}
                   <Route path="/about" element={<About />} />
                   <Route path='*' element={<Navigate to='/' />} />   {/* Redirect unknown routes to home */}
 

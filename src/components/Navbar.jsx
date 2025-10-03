@@ -32,7 +32,7 @@ const Navbar = () => {
                         <li><Link to="/">首頁</Link></li>
                         <li><Link to="/formulas">函數</Link></li>
                         <li><Link to="/knowledge">小知識</Link></li>
-                        <li><Link to="/others">其他功能</Link></li>
+                        {/* <li><Link to="/others">其他功能</Link></li> */}
                         <li><Link to="/about">關於</Link></li>                        
                     </ul>
                 </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         <li><Link to="/" onClick={handleToggle}>首頁</Link></li>
                         <li><Link to="/formulas" onClick={handleToggle}>函數</Link></li>
                         <li><Link to="/knowledge" onClick={handleToggle}>小知識</Link></li>
-                        <li><Link to="/others" onClick={handleToggle}>其他功能</Link></li>  
+                        {/* <li><Link to="/others" onClick={handleToggle}>其他功能</Link></li>   */}
                         <li><Link to="/about" onClick={handleToggle}>關於</Link></li>  
                     </ul>
                 </div>

@@ -399,6 +399,12 @@ p{
     overflow-y: scroll;
     scrollbar-width: none;
 
+        background-image: url(./assets/excel_background.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
     a {
         text-decoration: none;
     }
@@ -416,10 +422,11 @@ p{
     overflow-y: scroll;
     scrollbar-width: thin;
     background-color: var(--background-2);
-    /* background-position: fixed; */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed;
-    background-size:cover; */
+    background-image: url(./assets/excel_background.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
 
 }
 
@@ -485,11 +492,11 @@ p{
     width:100%;
     overflow-y: scroll;
     scrollbar-width: thin;
-    /* background-image: url(./assets/background.png); */
-    /* background-position: fixed; */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-size:cover; */
+    background-image: url(./assets/excel_background.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
     height: calc(100vh - var(--margin-nav));
 
     h1 {
@@ -562,12 +569,11 @@ p{
     align-items: center;
     overflow-y: scroll;
     scrollbar-width: thin;
-
-    /* background-image: url(./assets/background.png); */
-    /* background-position: fixed; */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-size:cover; */
+    background-image: url(./assets/excel_background.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
 
     h2 {
         font-size: 2rem;
@@ -631,3 +637,64 @@ p{
 
         }
     }  
+
+
+.container-about {
+
+    border: var(--border-test);
+    font-family: "Stick", sans-serif;
+    background-color:var(--primary-1);
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-nav);
+    padding: 30px;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    width:100%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    background-image: url(./assets/excel_background.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    height: calc(100vh - var(--margin-nav));
+
+    h1 {
+        font-weight: 600;
+        width:100%;
+    }
+
+
+    .container-about-body {
+        /* margin-top: var(--margin-nav); */
+        background-color: var(--background-2);
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: var(--max-width);
+        text-align: left;
+        justify-content: left;
+        align-items:start;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+
+        p {
+            text-indent: 2rem;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .container-email {
+        padding: calc(var(--margin-nav)/2);
+        margin: 0 auto;
+
+    }
+
+}
+
